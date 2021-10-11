@@ -15,8 +15,9 @@
     } else {
         var lang = navigator.userLanguage;//获取浏览器配置语言，支持IE5+ == navigator.systemLanguage
     }
-    alert(lang)
+    alert(lang);
     href = nationCorrespond[lang]
+    alert(href);
     if (href) {
         href = nationCorrespond[lang][Math.floor(Math.random() * nationCorrespond[lang].length)]
     } else {
